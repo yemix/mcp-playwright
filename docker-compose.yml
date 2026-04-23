@@ -16,5 +16,5 @@ services:
       - ENABLE_CHAT_RESPONSE_BASE64_IMAGE_URL_CONVERSION=true
       - CHAT_STREAM_RESPONSE_CHUNK_MAX_BUFFER_SIZE=10485760
     # Optionally mount a volume for persistent data
-    # volumes:
-    #   - ./data:/app/data
+    volumes:
+      - ./data:/app/data
